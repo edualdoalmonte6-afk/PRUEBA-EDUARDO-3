@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Salud y Bienestar</title>
+    
+    <!-- SEO y Metadatos -->
+    <meta name="description" content="Hospital Salud y Bienestar, ofrecemos servicios médicos de calidad con un equipo de especialistas dedicados a su cuidado. Consultas, cirugías y más.">
+    <meta name="keywords" content="hospital, salud, bienestar, consulta general, cirugías, doctores, medicina, República Dominicana">
+    <meta name="author" content="Desarrollador Frontend">
+    <link rel="canonical" href="https://ejemplo.com/">
+    
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menú Fijo Superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio"><i class="fas fa-hospital"></i> Salud y Bienestar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clientes">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Sección Inicio -->
+        <section id="inicio" class="text-center">
+            <div class="banner-image">
+                <img src="https://amhigo.com/images/amhiblog/Especialistas/Jorge_Luis_Poo/Consulta-1.jpg" alt="Banner del hospital" class="img-fluid w-100">
+            </div>
+            <div class="container py-5">
+                <h1 class="display-4">🏥 Cuidamos de ti y los tuyos ❤️</h1>
+                <p class="lead">En el Hospital Salud y Bienestar, combinamos tecnología de punta con un equipo humano excepcional para ofrecerte la mejor atención médica.</p>
+                <a href="#contacto" class="btn btn-cta btn-lg">Agenda tu Cita Ahora</a>
+            </div>
+        </section>
+
+        <!-- Sección Servicios -->
+        <section id="servicios" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestros Servicios</h2>
+                <div class="row text-center">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card service-card h-100 shadow-sm">
+                            <div class="card-body">
+                                <img src="https://www.hespanol.com/fotografias/noticias/2024/consulta%20externa%20general%205.jpg" class="card-img-top mb-3" alt="Consulta General">
+                                <div class="icon-circle mx-auto mb-3"><i class="fas fa-stethoscope fa-2x"></i></div>
+                                <h3 class="card-title">Consulta General</h3>
+                                <p class="card-text">Atención primaria para toda la familia, diagnóstico y tratamiento de enfermedades comunes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card service-card h-100 shadow-sm">
+                            <div class="card-body">
+                                <img src="https://hospitalcima.com/wp-content/uploads/2025/05/Portada-1177x800.jpg" class="card-img-top mb-3" alt="Cirugías">
+                                <div class="icon-circle mx-auto mb-3"><i class="fas fa-procedures fa-2x"></i></div>
+                                <h3 class="card-title">Cirugías</h3>
+                                <p class="card-text">Quirófanos equipados con la última tecnología para procedimientos seguros y eficaces.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-4 mb-4">
+                        <div class="card service-card h-100 shadow-sm">
+                            <div class="card-body">
+                                <img src="https://www.clinicabiblica.com/images/2020/servicios-medicos/emergencias/emergencias-ninos-adultos.jpg" class="card-img-top mb-3" alt="Emergencias 24/7">
+                                <div class="icon-circle mx-auto mb-3"><i class="fas fa-ambulance fa-2x"></i></div>
+                                <h3 class="card-title">Emergencias 24/7</h3>
+                                <p class="card-text">Nuestro equipo de emergencias está disponible las 24 horas del día para atender cualquier urgencia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Equipo -->
+        <section id="equipo" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestro Equipo Médico</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card team-card h-100 shadow-sm text-center">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" class="team-img rounded-circle mx-auto" alt="Dra. Ana López">
+                            <div class="card-body">
+                                <h4 class="card-title">Dra. Ana López</h4>
+                                <p class="text-muted">Cardióloga</p>
+                                <p class="card-text">Especialista en enfermedades del corazón con más de 15 años de experiencia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card team-card h-100 shadow-sm text-center">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" class="team-img rounded-circle mx-auto" alt="Dr. Carlos Méndez">
+                            <div class="card-body">
+                                <h4 class="card-title">Dr. Carlos Méndez</h4>
+                                <p class="text-muted">Pediatra</p>
+                                <p class="card-text">Dedicado al cuidado integral de la salud de los más pequeños de la casa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card team-card h-100 shadow-sm text-center">
+                             <img src="https://randomuser.me/api/portraits/women/68.jpg" class="team-img rounded-circle mx-auto" alt="Dra. Laura Gómez">
+                            <div class="card-body">
+                                <h4 class="card-title">Dra. Laura Gómez</h4>
+                                <p class="text-muted">Ginecóloga</p>
+                                <p class="card-text">Experta en salud femenina, ofreciendo un cuidado compasivo y profesional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección Clientes -->
+        <section id="clientes" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Lo que dicen nuestros clientes</h2>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Cliente 1"><h5>Juan Pérez</h5><p>"¡Excelente atención! 👍 El personal es muy profesional."</p></div></div>
+                                <div class="col-md-3"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Cliente 2"><h5>Maria Rodríguez</h5><p>"Me sentí segura y bien cuidada. ✨ ¡Gracias!"</p></div></div>
+                                <div class="col-md-3"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Cliente 3"><h5>Carlos Sanchez</h5><p>"Instalaciones modernas y limpias. 💯 Recomendado."</p></div></div>
+                                <div class="col-md-3"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Cliente 4"><h5>Laura Fernandez</h5><p>"El Dr. Méndez es un amor con los niños. 💖"</p></div></div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                             <div class="row">
+                                <div class="col-md-3"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Cliente 5"><h5>Pedro Martinez</h5><p>"La cirugía fue un éxito. 🙏 Equipo increíble."</p></div></div>
+                                <div class="col-md-3"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/6.jpg" alt="Cliente 6"><h5>Ana Gomez</h5><p>"Rapidez en la emergencia. ¡Me salvaron! 🚑"</p></div></div>
+                                <div class="col-md-3"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/7.jpg" alt="Cliente 7"><h5>Luis Jimenez</h5><p>"Muy organizados con las citas. 🗓️ Cero espera."</p></div></div>
+                                <div class="col-md-3"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/8.jpg" alt="Cliente 8"><h5>Sofia Diaz</h5><p>"La Dra. López es la mejor cardióloga. ❤️"</p></div></div>
+                            </div>
+                        </div>
+                         <!-- Slide 3 -->
+                        <div class="carousel-item">
+                             <div class="row">
+                                <div class="col-md-3"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/9.jpg" alt="Cliente 9"><h5>Jorge Castillo</h5><p>"Trato humano y cercano. Se nota que les importa. 😊"</p></div></div>
+                                <div class="col-md-3"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/10.jpg" alt="Cliente 10"><h5>Isabel Cruz</h5><p>"Volvería sin dudarlo. ¡Gracias por todo! 🌟"</p></div></div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles fuera del carrusel -->
+                <div class="carousel-controls-external">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Contáctanos</h2>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card contact-info-card text-center p-4 h-100 shadow">
+                            <h3>Llámanos Ahora</h3>
+                            <a href="tel:+18091234567" class="phone-number">(809) 123-4567</a>
+                            <p>Estamos disponibles para atender tu llamada.</p>
+                            <a href="https://wa.me/18091234567" target="_blank" class="btn btn-whatsapp w-100">
+                                <i class="fab fa-whatsapp"></i> Enviar mensaje por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                       <div class="card p-4 h-100 shadow">
+                           <form id="contactForm" novalidate>
+                               <div class="mb-3">
+                                   <label for="name" class="form-label">Nombre Completo</label>
+                                   <input type="text" class="form-control" id="name" required>
+                               </div>
+                               <div class="mb-3">
+                                   <label for="email" class="form-label">Correo Electrónico</label>
+                                   <input type="email" class="form-control" id="email" required>
+                               </div>
+                               <div class="mb-3">
+                                   <label for="message" class="form-label">Mensaje</label>
+                                   <textarea class="form-control" id="message" rows="4" required></textarea>
+                               </div>
+                               <button type="submit" class="btn btn-primary w-100">Enviar Consulta</button>
+                           </form>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center text-white py-4">
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="mb-1"><strong>Dirección:</strong> Av. Principal 123, Santo Domingo, República Dominicana</p>
+            <p class="mb-0"><strong>Horarios:</strong> Lunes a Viernes de 8:00 AM a 8:00 PM | Emergencias 24/7</p>
+            <p class="mt-2">&copy; 2025 Hospital Salud y Bienestar. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Confirmación -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">¡Gracias por contactarnos! 🙏</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <p>Hemos recibido tu mensaje. ✅</p>
+            <p>Se está abriendo tu aplicación de correo para completar el envío. ¡Te responderemos pronto! 📧</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

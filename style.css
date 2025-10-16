@@ -1,0 +1,266 @@
+/* Variables CSS para una fácil personalización */
+:root {
+    --primary-color: #2C3E50; /* Azul oscuro */
+    --secondary-color: #18BC9C; /* Verde azulado */
+    --accent-color: #F39C12; /* Naranja */
+    --light-color: #ecf0f1;
+    --dark-color: #34495e;
+    --font-family: Arial, sans-serif;
+}
+
+/* Estilos Generales */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; /* Ajuste para el menú fijo */
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    padding-top: 70px; /* Espacio para el menú fijo */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Menú de Navegación */
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Sección Inicio */
+#inicio {
+    background-color: #ffffff;
+}
+
+#inicio .banner-image img {
+    height: 40vh;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.btn-cta {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cta:hover {
+    background-color: #15a589;
+    border-color: #15a589;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección Servicios */
+.service-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.service-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sección Equipo */
+#equipo .team-card {
+    border: none;
+    overflow: hidden;
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: -75px;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Clientes (Testimonios) */
+.testimonial-card {
+    background: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 15px;
+    min-height: 280px;
+    position: relative;
+    overflow: hidden;
+    /* Animación de borde arcoíris */
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    animation: rainbow-border 4s linear infinite;
+}
+
+@keyframes rainbow-border {
+    0% { border-color: #ff0000; }
+    15% { border-color: #ff7f00; }
+    30% { border-color: #ffff00; }
+    45% { border-color: #00ff00; }
+    60% { border-color: #0000ff; }
+    75% { border-color: #4b0082; }
+    90% { border-color: #9400d3; }
+    100% { border-color: #ff0000; }
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--secondary-color);
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.testimonial-card h5 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.carousel-controls-external {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.carousel-controls-external .carousel-control-prev,
+.carousel-controls-external .carousel-control-next {
+    position: static;
+    display: inline-flex;
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-color);
+    opacity: 1;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.carousel-controls-external .carousel-control-prev:hover,
+.carousel-controls-external .carousel-control-next:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Sección Contacto */
+.contact-info-card {
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: scale(1.05);
+}
+
+.contact-info-card h3 {
+    color: white;
+}
+
+.phone-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.phone-number:hover {
+    color: #fff;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1DAE52;
+    color: white;
+}
+
+#contactForm .form-control {
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 992px) {
+    .team-img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .testimonial-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #inicio .banner-image img {
+        height: 30vh;
+    }
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+}
